@@ -9,5 +9,54 @@
       href="{{ url_for('static', filename='css/style.css') }}"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="profile-container">
+      <img
+        src="{{ url_for('static', filename='images/profile.jpg') }}"
+        alt="Profile Picture"
+        class="profile-image"
+      />
+      <div class="profile-info">
+        <h2>Yehezkiel Efraim Darmadi</h2>
+        <p>
+          Melbourne | +61 426 682 489 |
+          <a href="https://www.linkedin.com/in/yehezkieled/" target="_blank"
+            >linkedin.com/in/yehezkieled</a
+          >
+          | yehezkieled@gmail.com
+        </p>
+        <p class="bio">Introduction....</p>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <a
+        href="#"
+        data-section="projects"
+        class="active"
+        onclick="showSection('projects')"
+        >Projects</a
+      >
+      <a href="#" data-section="resume" onclick="showSection('resume')"
+        >Resume</a
+      >
+      <a href="#" data-section="about" onclick="showSection('about')"
+        >About Me</a
+      >
+    </div>
+
+    <div id="content-container">
+      <div id="projects" class="content-section">
+        <h2>project</h2>
+      </div>
+      <div id="resume" class="content-section">
+        <h2>resume</h2>
+      </div>
+      <div id="about" class="content-section">
+        <h2>about me</h2>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename = 'js/script.js')}}"></script>
+  </body>
 </html>
