@@ -32,10 +32,10 @@
     <div class="navigation">
       <a
         href="#"
-        data-section="projects"
+        data-section="Portfolio"
         class="active"
-        onclick="showSection('projects')"
-        >Projects</a
+        onclick="showSection('Portfolio')"
+        >Portfolio</a
       >
       <a href="#" data-section="resume" onclick="showSection('resume')"
         >Resume</a
@@ -43,17 +43,101 @@
       <a href="#" data-section="about" onclick="showSection('about')"
         >About Me</a
       >
+      <a
+        href="#"
+        data-section="publication"
+        onclick="showSection('publication')"
+        >Publications</a
+      >
     </div>
 
     <div id="content-container">
-      <div id="projects" class="content-section">
-        <h2>project</h2>
+      <!-- portfolio section -->
+      <div id="Portfolio" class="content-section">
+        <h2>haha</h2>
       </div>
+
+      <!-- resume section -->
       <div id="resume" class="content-section">
-        <h2>resume</h2>
+        <p>You can download my full resume here:</p>
+        <a
+          href="{{ url_for('static', filename='files/Yehezkiel Efraim Darmadi.pdf') }}"
+          download
+          class="resume-button"
+          >Download Resume (PDF)</a
+        >
+        <!-- Work Experience Section -->
+        <div class="work-experience">
+          <h2>Work Experiences</h2>
+          <div class="job">
+            <h3>
+              Master’s Student Researcher and Research Assistant at AI for Law
+              Enforcement and Community Safety (AiLECS)
+              <span class="date">August 2024 - Current</span>
+            </h3>
+            <p><em>Monash University, Melbourne</em></p>
+          </div>
+
+          <div class="job">
+            <h3>
+              Product Developer Actuary (Senior Level)
+              <span class="date">September 2021 – October 2022</span>
+            </h3>
+            <p>
+              <em
+                >Yayasan Agri Sustineri Indonesia / Syngenta Foundation, Jakarta
+                Selatan</em
+              >
+            </p>
+          </div>
+
+          <div class="job">
+            <h3>
+              Business Analyst <span class="date">May 2021 – August 2021</span>
+            </h3>
+            <p><em>LAZADA, Jakarta Selatan</em></p>
+          </div>
+        </div>
+
+        <!-- skills -->
+        <div class="skill"></div>
+
+        <!-- certifications -->
       </div>
+
+      <!-- for the about section -->
       <div id="about" class="content-section">
-        <h2>about me</h2>
+        <!-- timeline -->
+        <div class="timeline">
+          <div class="timeline-event">
+            <div class="timeline-badge">
+              <!-- <img src="icon1.png" alt="Icon" /> -->
+            </div>
+            <div class="timeline-content">
+              <h3>IST Delegate Election</h3>
+              <h4>Election app for Técnico's Pedagogical Council</h4>
+              <p>Since I was a member of the Pedagogical Council...</p>
+              <span class="timeline-date">October 2023</span>
+            </div>
+          </div>
+
+          <div class="timeline-event">
+            <div class="timeline-badge">
+              <!-- <img src="icon2.png" alt="Icon" /> -->
+            </div>
+            <div class="timeline-content">
+              <h3>KTH</h3>
+              <h4>MSc Cybersecurity</h4>
+              <p>I started a Cybersecurity Master programme at...</p>
+              <span class="timeline-date">April 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- publication section -->
+      <div id="publication" class="content-section">
+        <h2>coming soon</h2>
       </div>
     </div>
 
