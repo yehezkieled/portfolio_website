@@ -139,7 +139,13 @@ body {
 }
 
 .job {
-  margin-top: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin-top: 10px;
 }
 
 .job h3 {
@@ -162,8 +168,134 @@ body {
 }
 
 /* for the skill section */
+.skills-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* Responsive grid */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.skill {
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  background: #e0e0e0;
+}
 
 /* for the cert section */
+.certifications-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certifications-section h2 {
+  font-size: 22px;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.certification {
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.certification:hover {
+  transform: scale(1.05);
+  background: #e0e0e0;
+}
+
+.certification h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.certification p {
+  font-size: 14px;
+  color: #555;
+}
+
+.certification a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.certification a:hover {
+  text-decoration: underline;
+}
+
+/* Education Section */
+.education-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-section h2 {
+  font-size: 22px;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.education-card {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.education-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.education-card p {
+  font-size: 14px;
+  color: #555;
+}
 
 /* for the timeline */
 .timeline {
@@ -248,4 +380,24 @@ body {
     width: 80%; /* Make the content wider */
     margin-left: 50px; /* Add spacing from the timeline */
   }
+}
+
+/* Portfolio Section */
+.portfolio-container {
+  margin-top: 40px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 80%;
+  max-width: 900px;
+}
+
+.project-card {
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
