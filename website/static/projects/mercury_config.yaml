@@ -1,0 +1,8 @@
+apps:
+  - path: projects/gomoku_project/gomoku.ipynb
+    title: "Gomoku Game"
+    description: "Simple Gomoku Game"
+  - path: projects/notebooks/machine_learning.ipynb
+    title: "Machine Learning App"
+    description: "Experiment with ML models."
+    url: /machine-learning
