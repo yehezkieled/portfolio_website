@@ -107,6 +107,97 @@ body {
   display: block; /* Show only the Projects section by default */
 }
 
+/* portfolio section */
+/* Filter Buttons */
+#filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+  justify-content: center;
+}
+
+/* Filter Buttons */
+.filter-button {
+  padding: 10px 20px;
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.filter-button:hover {
+  background-color: #d4d9de;
+  transform: translateY(-2px);
+}
+
+.filter-button.include {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.filter-button.exclude {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Project Cards */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.project-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #filter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* for the resume section */
+/* for the work exp section */
 .resume-button {
   display: inline-block;
   padding: 12px 20px;
@@ -122,8 +213,6 @@ body {
   background-color: #0056b3;
 }
 
-/* for the resume section */
-/* for the work exp section */
 .work-experience {
   margin-top: 30px;
   padding: 20px;

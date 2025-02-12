@@ -54,7 +54,36 @@
     <div id="content-container">
       <!-- portfolio section -->
       <div id="Portfolio" class="content-section">
-        <h2>haha</h2>
+        <div class="filters" id="filter-container">
+          <!-- Filters will be generated dynamically -->
+        </div>
+
+        <div class="projects">
+          <div
+            class="project-card"
+            data-skills="Python,SQL"
+            onclick="window.open('https://example.com/project1')"
+          >
+            <h3>Project 1</h3>
+            <p>Skills: Python, SQL</p>
+          </div>
+          <div
+            class="project-card"
+            data-skills="Data Wrangling,Optimisation"
+            onclick="window.open('https://example.com/project2')"
+          >
+            <h3>Project 2</h3>
+            <p>Skills: Data Wrangling, Optimisation</p>
+          </div>
+          <div
+            class="project-card"
+            data-skills="GitLab,CI/CD"
+            onclick="window.open('https://example.com/project3')"
+          >
+            <h3>Project 3</h3>
+            <p>Skills: GitLab, CI/CD</p>
+          </div>
+        </div>
       </div>
 
       <!-- resume section -->
