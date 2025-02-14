@@ -8,6 +8,11 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='css/dota2/stylesheets/dota2minimapheroes.css') }}"
+    />
   </head>
   <body>
     <div class="profile-container">
@@ -282,14 +287,15 @@
 
       <!-- for the about section -->
       <div id="about" class="content-section">
-        <div>
+        <div class="about-container">
           <p>
             Hi! I am originally from Indonesia and I studied in KL for three
             years.
           </p>
           <p>
-            I love basketball, gaming, and music-and I am always eager to learn
-            something new!
+            I love basketball, gaming
+            <i class="d2mh npc_dota_herojuggernaut_alt1"></i>, and music-and I
+            am always eager to learn something new!
           </p>
         </div>
         <!-- timeline -->
