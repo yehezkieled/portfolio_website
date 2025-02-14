@@ -21,8 +21,8 @@ body {
 }
 
 .profile-image {
-  width: 100px;
-  height: 100px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 20px;
@@ -52,8 +52,9 @@ body {
 
 .bio {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
+  color: black !important;
 }
 
 .navigation {
@@ -386,6 +387,17 @@ body {
   color: #555;
 }
 
+.transcript-link {
+  font-size: 0.85em;
+  color: #007bff;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.transcript-link:hover {
+  text-decoration: underline;
+}
+
 /* for the timeline */
 .timeline {
   position: relative;
@@ -489,4 +501,15 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+}
+
+/* publication section */
+.publication-container {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin-top: 10px;
 }
