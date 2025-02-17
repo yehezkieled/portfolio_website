@@ -79,11 +79,17 @@
           <div
             class="project-card"
             data-skills="Python,SQL"
-            onclick="window.open('https://example.com/project1')"
+            onclick="window.location.href='/gomoku'"
           >
+            <img
+              src="{{ url_for('static', filename='images/project1.png') }}"
+              alt="Project 1 Snippet"
+              class="project-snippet"
+            />
             <h3>Project 1</h3>
             <p>Skills: Python, SQL</p>
           </div>
+
           <div
             class="project-card"
             data-skills="Data Wrangling,Optimisation"
